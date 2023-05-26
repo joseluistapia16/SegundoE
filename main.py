@@ -1,6 +1,15 @@
 from procesos.operaciones import *
 from procesos.data import *
 from menus.menuE import *
+from impl.run import *
+
+if __name__ == '__main__':
+    obR = Run()
+    obR.start()
+
+
+
+""" 
 def funcion2():
     print("Segundo E")
     v2 = 56
@@ -114,10 +123,12 @@ def funcion9():
         print(lista[i])
 
 def funcion1():
+    
     print("Hola mundo")
     print("POO")
 
 funcion9()
+"""
 
 
 
