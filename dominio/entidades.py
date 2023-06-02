@@ -40,6 +40,9 @@ class Persona:
     def getData(self):
         return self.__cedula+" "+self.nombre+" "+self.direccion
 
+    def getFields(self):
+        return  None
+
 class Proveedor(Persona):
 
     def __init__(self,cedula,nombre,direccion,codigo):
@@ -62,6 +65,10 @@ class Cliente(Persona,Metodos):
         print("Segundo E")
         self._valor = nombre
         return "Hola "+self._valor
+
+    def getFields(self):
+        return "Cedula:"+self.getCedula()+"\nNombre:"+self.nombre+\
+            "\nDireccion:"+self.direccion+"\nCodigo:"+self.codigo
 class Producto:
 
     def __init__(self,codigo,nombre,categoria):

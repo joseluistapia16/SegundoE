@@ -26,3 +26,21 @@ class Inputs:
                 res = True
                 break
         return res
+
+
+class Process:
+    def getClient(self,lista, cedula):
+        obj = None
+        for i in range(len(lista)):
+            if cedula == lista[i].getCedula():
+                obj = lista[i]
+                break
+        return obj
+
+    def getClientPos(self,lista,cedula):
+        pos = -1
+        for i in range(len(lista)):
+            if cedula== lista[i].getCedula():
+                pos = i
+                break
+        return pos
